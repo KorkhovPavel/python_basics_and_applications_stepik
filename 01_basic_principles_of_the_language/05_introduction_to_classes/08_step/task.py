@@ -37,12 +37,8 @@ class MoneyBox:
             return True
         return False
 
+
 x = MoneyBox(10)
-
 x.add(5)
-
 x.add(5)
-
 print(x.can_add(1))
-
-
