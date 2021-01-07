@@ -90,6 +90,7 @@
 # None
 # bar
 # foo
+
 n = int(input())
 scopes = {'global': {'funcs': [], 'vars': []}}
 
@@ -108,6 +109,7 @@ def add(scopes, current_namespace, what):
 
 
 def create(scopes, current_namespace, parent_namespace):
+
     if current_namespace not in scopes:
         scopes[current_namespace] = {}
         scopes[current_namespace]['funcs'] = []
