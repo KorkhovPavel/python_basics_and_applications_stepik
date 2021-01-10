@@ -29,6 +29,8 @@
 # Sample Output 3:
 #
 # 2016 1 1
+
+
 import datetime
 
 val1 = list(map(int, input().split()))
@@ -36,4 +38,4 @@ val2 = int(input())
 
 val_data = datetime.date(val1[0], val1[1], val1[2])
 val_data_plus = val_data + datetime.timedelta(days=val2)
-print(val_data_plus)
+print(val_data_plus.year, val_data_plus.month, val_data_plus.day)
