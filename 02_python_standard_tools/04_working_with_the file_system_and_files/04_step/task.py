@@ -19,3 +19,5 @@ with open("r_test.txt.txt") as fr, open("w_test.txt", 'w') as fw:
         lst.append(i)
     for l2 in reversed(lst):
         fw.write(l2)
+
+
