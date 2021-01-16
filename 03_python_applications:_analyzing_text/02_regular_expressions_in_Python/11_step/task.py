@@ -15,8 +15,7 @@
 import sys
 import re
 
-pattern = r'\b(\w+)\1\b'
+pattern = r'human'
 for line in sys.stdin:
-    line = line.rstrip()
-    if re.findall(pattern, line):
-        print(line)
+    res = re.sub(pattern, 'computer',line)
+    print(res)
