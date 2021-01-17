@@ -10,3 +10,11 @@
 #
 # I need to understand the computer mind
 # computerity
+
+import sys
+import re
+
+pattern = r'human'
+for line in sys.stdin:
+    res = re.sub(pattern, 'computer',line)
+    print(res)

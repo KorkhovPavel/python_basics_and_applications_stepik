@@ -17,5 +17,6 @@ import re
 
 pattern = r'human'
 for line in sys.stdin:
-    res = re.sub(pattern, 'computer',line)
-    print(res)
+    line = line.rstrip()
+    if re.findall(pattern, line):
+        print(line)
